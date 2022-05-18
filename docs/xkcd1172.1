@@ -1,0 +1,36 @@
+.Dd $Mdocdate$
+.Dt XKCD1172 1
+.Os
+.Sh NAME
+.Nm xkcd1172
+.Nd rapidly increase CPU temperature when holding down the spacebar
+.Sh SYNOPSIS
+.Nm
+.Op OPTIONS...
+.Sh DESCRIPTION
+.Nm
+is a program that brings back spacebar heating to your system. You can use it
+standalone or as a Python library to include it in your program.
+.Sh OPTIONS
+.Bl -tag -width Ds -compact
+.It Fl a, Fl -add-autostart
+Adds
+.Nm
+to XDG autostart.
+.Pp
+.It Fl r, Fl -rm-autostart
+Removes
+.Nm
+from XDG autostart.
+.Sh EXAMPLES
+.Pp
+Using as a Python library:
+.Bd -literal
+import xkcd1172
+xkcd1172.start_daemon_thread()
+.Sh AUTHORS
+.An Dawid Potocki
+-
+.Lk https://dawidpotocki.com
+.Sh BUGS
+You mean features?
